@@ -1,0 +1,6 @@
+../Midware/LVGL/src/draw/sw/../../misc/lv_color.h:439:48:lv_color_mix	1
+../Midware/LVGL/src/draw/sw/lv_draw_sw_blend.c:958:26:color_blend_true_color_additive	3
+../Midware/LVGL/src/draw/sw/lv_draw_sw_blend.c:1011:26:color_blend_true_color_subtractive	3
+../Midware/LVGL/src/draw/sw/lv_draw_sw_blend.c:1037:26:color_blend_true_color_multiply	3
+../Midware/LVGL/src/draw/sw/lv_draw_sw_blend.c:97:6:lv_draw_sw_blend	4
+../Midware/LVGL/src/draw/sw/lv_draw_sw_blend.c:110:28:lv_draw_sw_blend_basic	109

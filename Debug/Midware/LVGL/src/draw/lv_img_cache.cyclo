@@ -1,0 +1,3 @@
+../Midware/LVGL/src/draw/lv_img_cache.c:63:25:_lv_img_cache_open	4
+../Midware/LVGL/src/draw/lv_img_cache.c:149:6:lv_img_cache_set_size	1
+../Midware/LVGL/src/draw/lv_img_cache.c:180:6:lv_img_cache_invalidate_src	1

@@ -1,0 +1,12 @@
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:154:13:lv_animimg_constructor	1
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:172:13:index_change	2
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:63:12:lv_animimg_create	1
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:71:6:lv_animimg_set_src	1
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:85:6:lv_animimg_start	1
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:92:6:lv_animimg_del	1
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:104:6:lv_animimg_set_duration	1
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:111:6:lv_animimg_set_repeat_count	1
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:118:6:lv_animimg_set_playback_time	1
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:125:6:lv_animimg_set_playback_delay	1
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:132:6:lv_animimg_set_start_cb	1
+../Midware/LVGL/src/extra/widgets/animimg/lv_animimg.c:139:6:lv_animimg_set_ready_cb	1

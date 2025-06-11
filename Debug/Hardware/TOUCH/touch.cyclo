@@ -1,0 +1,3 @@
+../Hardware/TOUCH/touch.c:30:4:GT1151_Init	2
+../Hardware/TOUCH/touch.c:88:4:GT1151_IsPress	1
+../Hardware/TOUCH/touch.c:102:6:GT1151_GetPoint	2

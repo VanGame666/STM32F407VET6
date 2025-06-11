@@ -1,0 +1,11 @@
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:291:13:lv_dclock_destructor	2
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:268:13:lv_dclock_constructor	1
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:412:13:lv_dclock_refr_text	5
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:300:13:lv_dclock_event	18
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:80:6:lv_dclock_set_text	7
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:142:6:lv_dclock_set_text_fmt	4
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:69:12:lv_dclock_create	2
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:174:10:lv_dclock_get_text_selection_start	1
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:188:10:lv_dclock_get_text_selection_end	1
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:211:6:clock_count_24	4
+../Midware/LVGL/src/extra/widgets/dclock/lv_dclock.c:235:6:clock_count_12	8

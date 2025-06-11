@@ -1,0 +1,9 @@
+../Midware/LVGL/src/extra/widgets/carousel/lv_carousel.c:151:13:lv_carousel_constructor	1
+../Midware/LVGL/src/extra/widgets/carousel/lv_carousel.c:178:13:carousel_event_cb	6
+../Midware/LVGL/src/extra/widgets/carousel/lv_carousel.c:162:13:lv_carousel_element_constructor	1
+../Midware/LVGL/src/extra/widgets/carousel/lv_carousel.c:57:12:lv_carousel_create	1
+../Midware/LVGL/src/extra/widgets/carousel/lv_carousel.c:72:12:lv_carousel_add_element	2
+../Midware/LVGL/src/extra/widgets/carousel/lv_carousel.c:95:6:lv_carousel_set_element_width	1
+../Midware/LVGL/src/extra/widgets/carousel/lv_carousel.c:101:6:lv_obj_set_element	1
+../Midware/LVGL/src/extra/widgets/carousel/lv_carousel.c:119:6:lv_obj_set_element_id	3
+../Midware/LVGL/src/extra/widgets/carousel/lv_carousel.c:141:12:lv_carousel_get_element_act	1

@@ -1,0 +1,6 @@
+../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_common.c:47:13:reset_core	0	static
+../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_stm32.h:233:20:dwc2_phy_update.part.0	0	static
+../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_common.c:175:6:dwc2_core_is_highspeed	0	static
+../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_common.c:200:6:dwc2_core_init	24	static,ignoring_inline_asm
+../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_common.c:264:6:dfifo_read_packet	12	static
+../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_common.c:289:6:dfifo_write_packet	16	static

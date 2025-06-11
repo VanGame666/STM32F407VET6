@@ -1,0 +1,9 @@
+../Midware/TinyUSB/hw/bsp/stm32f4/family.c:45:6:OTG_FS_IRQHandler	1
+../Midware/TinyUSB/hw/bsp/stm32f4/family.c:49:6:OTG_HS_IRQHandler	1
+../Midware/TinyUSB/hw/bsp/stm32f4/family.c:69:6:board_init	3
+../Midware/TinyUSB/hw/bsp/stm32f4/family.c:192:6:board_led_write	1
+../Midware/TinyUSB/hw/bsp/stm32f4/family.c:202:10:board_button_read	1
+../Midware/TinyUSB/hw/bsp/stm32f4/family.c:211:8:board_get_unique_id	1
+../Midware/TinyUSB/hw/bsp/stm32f4/family.c:224:5:board_uart_read	1
+../Midware/TinyUSB/hw/bsp/stm32f4/family.c:230:5:board_uart_write	1
+../Midware/TinyUSB/hw/bsp/stm32f4/family.c:243:10:board_millis	1

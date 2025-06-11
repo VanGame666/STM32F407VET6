@@ -1,0 +1,4 @@
+../Midware/LVGL/port/lv_port_disp.c:14:13:disp_flush	24	static
+../Midware/LVGL/port/lv_port_disp.c:10:6:disp_enable_update	0	static
+../Midware/LVGL/port/lv_port_disp.c:11:6:disp_disable_update	0	static
+../Midware/LVGL/port/lv_port_disp.c:20:6:lv_port_disp_init	16	static

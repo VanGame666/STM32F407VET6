@@ -1,0 +1,6 @@
+../Midware/LVGL/src/extra/widgets/textprogress/lv_textprogress.c:127:13:lv_textprogress_constructor	1
+../Midware/LVGL/src/extra/widgets/textprogress/lv_textprogress.c:53:12:lv_textprogress_create	1
+../Midware/LVGL/src/extra/widgets/textprogress/lv_textprogress.c:66:6:lv_textprogress_set_range_value	2
+../Midware/LVGL/src/extra/widgets/textprogress/lv_textprogress.c:81:6:lv_textprogress_set_decimal	1
+../Midware/LVGL/src/extra/widgets/textprogress/lv_textprogress.c:112:10:lv_textprogress_get_progress	1
+../Midware/LVGL/src/extra/widgets/textprogress/lv_textprogress.c:88:6:lv_textprogress_set_value	2

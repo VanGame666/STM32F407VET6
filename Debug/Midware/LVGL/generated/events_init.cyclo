@@ -1,0 +1,5 @@
+../Midware/LVGL/generated/events_init.c:20:13:screen_1_event_handler	2
+../Midware/LVGL/generated/events_init.c:41:13:screen_btn_2_event_handler	2
+../Midware/LVGL/generated/events_init.c:34:6:events_init_screen_1	1
+../Midware/LVGL/generated/events_init.c:58:6:events_init_screen	1
+../Midware/LVGL/generated/events_init.c:65:6:events_init	1

@@ -1,0 +1,5 @@
+../Midware/FatFS/diskio.c:23:9:disk_status	8	static
+../Midware/FatFS/diskio.c:61:9:disk_initialize	8	static
+../Midware/FatFS/diskio.c:99:9:disk_read	8	static
+../Midware/FatFS/diskio.c:149:9:disk_write	8	static
+../Midware/FatFS/diskio.c:198:9:disk_ioctl	0	static

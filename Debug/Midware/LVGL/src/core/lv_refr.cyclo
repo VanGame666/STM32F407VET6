@@ -1,0 +1,12 @@
+../Midware/LVGL/src/core/lv_refr.c:1315:13:call_flush_cb	1
+../Midware/LVGL/src/core/lv_refr.c:807:19:lv_refr_get_top_obj	8
+../Midware/LVGL/src/core/lv_refr.c:103:6:_lv_refr_init	1
+../Midware/LVGL/src/core/lv_refr.c:130:6:lv_obj_redraw	7
+../Midware/LVGL/src/core/lv_refr.c:968:6:refr_obj	28
+../Midware/LVGL/src/core/lv_refr.c:847:13:refr_obj_and_children	6
+../Midware/LVGL/src/core/lv_refr.c:698:13:refr_area_part	58
+../Midware/LVGL/src/core/lv_refr.c:206:6:_lv_inv_area	14
+../Midware/LVGL/src/core/lv_refr.c:267:13:_lv_refr_get_disp_refreshing	1
+../Midware/LVGL/src/core/lv_refr.c:278:6:_lv_refr_set_disp_refreshing	1
+../Midware/LVGL/src/core/lv_refr.c:287:6:_lv_disp_refr_timer	45
+../Midware/LVGL/src/core/lv_refr.c:113:6:lv_refr_now	5

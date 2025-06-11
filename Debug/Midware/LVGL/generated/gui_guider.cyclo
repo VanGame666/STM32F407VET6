@@ -1,0 +1,5 @@
+../Midware/LVGL/generated/gui_guider.c:17:6:ui_init_style	2
+../Midware/LVGL/generated/gui_guider.c:25:6:ui_load_scr_animation	4
+../Midware/LVGL/generated/gui_guider.c:45:6:ui_animation	4
+../Midware/LVGL/generated/gui_guider.c:73:6:init_scr_del_flag	1
+../Midware/LVGL/generated/gui_guider.c:80:6:setup_ui	1

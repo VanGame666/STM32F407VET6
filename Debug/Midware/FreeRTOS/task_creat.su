@@ -1,0 +1,4 @@
+../Midware/FreeRTOS/task_creat.c:48:6:AppTask2	16	static
+../Midware/FreeRTOS/task_creat.c:65:6:AppTask3	8	static
+../Midware/FreeRTOS/task_creat.c:31:6:AppTask1	64	static
+../Midware/FreeRTOS/task_creat.c:16:6:task_creat	24	static
