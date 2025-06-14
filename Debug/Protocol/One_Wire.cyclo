@@ -1,0 +1,9 @@
+../Protocol/One_Wire.c:4:6:Delay_us	1
+../Protocol/One_Wire.c:10:6:OneWire_Init	1
+../Protocol/One_Wire.c:23:9:OneWire_Reset	1
+../Protocol/One_Wire.c:39:6:OneWire_WriteBit	1
+../Protocol/One_Wire.c:48:9:OneWire_ReadBit	1
+../Protocol/One_Wire.c:61:6:OneWire_WriteByte	2
+../Protocol/One_Wire.c:70:9:OneWire_ReadByte	2
+../Protocol/One_Wire.c:80:6:OneWire_Transmit	2
+../Protocol/One_Wire.c:88:6:OneWire_Receive	2

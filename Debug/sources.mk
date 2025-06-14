@@ -27,6 +27,7 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32F4xx_HAL_Driver/Src \
+Hardware/AT24C02 \
 Hardware/DISP \
 Hardware/TOUCH \
 Midware/FatFS \
@@ -115,4 +116,5 @@ Midware/TinyUSB/src/portable/synopsys/dwc2 \
 Midware/TinyUSB/src \
 Midware/TinyUSB/src/typec \
 Midware/TinyUSB \
+Protocol \
 

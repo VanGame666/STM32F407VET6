@@ -316,6 +316,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/queue.h \
  E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/task.h \
  E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/timers.h \
+ E:/My_Work/STM32F407VE/Hardware/AT24C02/AT24C02.h \
+ E:/My_Work/STM32F407VE/Protocol/Soft_Check.h \
+ E:/My_Work/STM32F407VE/Protocol/Soft_I2C.h \
  E:/My_Work/STM32F407VE/Midware/FatFS/ff.h \
  E:/My_Work/STM32F407VE/Midware/FatFS/ffconf.h
 ../Core/Inc/main.h:
@@ -641,5 +644,8 @@ E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/list.h:
 E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/queue.h:
 E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/task.h:
 E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/timers.h:
+E:/My_Work/STM32F407VE/Hardware/AT24C02/AT24C02.h:
+E:/My_Work/STM32F407VE/Protocol/Soft_Check.h:
+E:/My_Work/STM32F407VE/Protocol/Soft_I2C.h:
 E:/My_Work/STM32F407VE/Midware/FatFS/ff.h:
 E:/My_Work/STM32F407VE/Midware/FatFS/ffconf.h:

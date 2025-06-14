@@ -1,0 +1,7 @@
+../Protocol/Soft_SPI.c:4:6:Soft_SPI_Init	1
+../Protocol/Soft_SPI.c:22:6:SPI_WriteByte	3
+../Protocol/Soft_SPI.c:40:9:SPI_ReadByte	3
+../Protocol/Soft_SPI.c:54:9:SPI_WriteRead_Byte	4
+../Protocol/Soft_SPI.c:74:6:Soft_SPI_Transmit	2
+../Protocol/Soft_SPI.c:82:6:Soft_SPI_Receive	2
+../Protocol/Soft_SPI.c:90:6:Soft_SPI_TransmitReceive	2

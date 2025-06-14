@@ -35,7 +35,7 @@
   #define sys_write   write
   #define sys_read    read
 #else
-  #define sys_write   _write
+  #define sys_write   _writ
   #define sys_read    _read
 #endif
 

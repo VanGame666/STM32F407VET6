@@ -1,4 +1,4 @@
-../Midware/TinyUSB/hw/bsp/board.c:89:5:_write	1
+../Midware/TinyUSB/hw/bsp/board.c:89:5:_writ	1
 ../Midware/TinyUSB/hw/bsp/board.c:94:5:_read	1
 ../Midware/TinyUSB/hw/bsp/board.c:134:5:board_getchar	2
 ../Midware/TinyUSB/hw/bsp/board.c:140:10:tusb_time_millis_api	1

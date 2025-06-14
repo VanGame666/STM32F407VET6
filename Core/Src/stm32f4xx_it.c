@@ -91,6 +91,8 @@ void HardFault_Handler(void)
   while (1)
   {
     /* USER CODE BEGIN W1_HardFault_IRQn 0 */
+		for(int i = 65536*100; i != 0; i--);
+		HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_1);
     /* USER CODE END W1_HardFault_IRQn 0 */
   }
 }
@@ -142,8 +144,6 @@ void UsageFault_Handler(void)
 
 /**
   * @brief This function handles System service call via SWI instruction.
-  */
-
 
 /**
   * @brief This function handles Debug monitor.

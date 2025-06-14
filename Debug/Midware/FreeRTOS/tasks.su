@@ -38,6 +38,7 @@
 ../Midware/FreeRTOS/tasks.c:6177:10:vTaskGetInfo	16	static
 ../Midware/FreeRTOS/tasks.c:6325:24:prvListTasksWithinSingleList	32	static
 ../Midware/FreeRTOS/tasks.c:4440:17:uxTaskGetSystemState	32	static
+../Midware/FreeRTOS/tasks.c:6429:17:uxTaskGetStackHighWaterMark	0	static
 ../Midware/FreeRTOS/tasks.c:6539:22:xTaskGetCurrentTaskHandle	0	static
 ../Midware/FreeRTOS/tasks.c:6574:18:xTaskGetCurrentTaskHandleForCore	0	static
 ../Midware/FreeRTOS/tasks.c:6599:16:xTaskGetSchedulerState	0	static

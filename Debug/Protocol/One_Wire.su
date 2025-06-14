@@ -1,0 +1,9 @@
+../Protocol/One_Wire.c:4:6:Delay_us	0	static
+../Protocol/One_Wire.c:10:6:OneWire_Init	32	static
+../Protocol/One_Wire.c:23:9:OneWire_Reset	8	static
+../Protocol/One_Wire.c:39:6:OneWire_WriteBit	8	static
+../Protocol/One_Wire.c:48:9:OneWire_ReadBit	8	static
+../Protocol/One_Wire.c:61:6:OneWire_WriteByte	16	static
+../Protocol/One_Wire.c:70:9:OneWire_ReadByte	16	static
+../Protocol/One_Wire.c:80:6:OneWire_Transmit	16	static
+../Protocol/One_Wire.c:88:6:OneWire_Receive	16	static

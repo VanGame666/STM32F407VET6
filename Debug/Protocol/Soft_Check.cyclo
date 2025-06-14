@@ -1,0 +1,8 @@
+../Protocol/Soft_Check.c:4:10:BitReverse32	2
+../Protocol/Soft_Check.c:15:10:BitReverse16	2
+../Protocol/Soft_Check.c:26:10:CharReverse32	1
+../Protocol/Soft_Check.c:31:10:CharReverse16	1
+../Protocol/Soft_Check.c:37:10:EthCRC32	4
+../Protocol/Soft_Check.c:60:10:ModBusCRC16	4
+../Protocol/Soft_Check.c:84:10:XmodeCRC16	4
+../Protocol/Soft_Check.c:105:9:CheckSUM8	2

@@ -1,6 +1,7 @@
 #ifndef __FREERTOS_H_
 #define __FREERTOS_H_
 
+#include "main.h"
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
@@ -15,6 +16,7 @@
 #include "bsp/board_api.h"
 #include "tusb.h"
 
+#include "AT24C02.h"
 
 typedef struct{TaskFunction_t pxTaskCode;
                const char * const pcName;

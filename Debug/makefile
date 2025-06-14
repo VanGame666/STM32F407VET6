@@ -9,6 +9,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include Protocol/subdir.mk
 -include Midware/TinyUSB/src/typec/subdir.mk
 -include Midware/TinyUSB/src/portable/synopsys/dwc2/subdir.mk
 -include Midware/TinyUSB/src/host/subdir.mk
@@ -97,6 +98,7 @@ RM := rm -rf
 -include Midware/FatFS/subdir.mk
 -include Hardware/TOUCH/subdir.mk
 -include Hardware/DISP/subdir.mk
+-include Hardware/AT24C02/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk

@@ -3,35 +3,32 @@
 #include "font.h" 
 #include "usart.h"	 
 
-//����IC�ͺ�:NT5310
 
 
-SRAM_HandleTypeDef TFTSRAM_Handler;    //SRAM���(���ڿ���LCD)
+SRAM_HandleTypeDef TFTSRAM_Handler;
 
-u16 POINT_COLOR = 0x0000;		//������ɫ
-u16 BACK_COLOR  = 0x0000;  	//����ɫ 
+u16 POINT_COLOR = 0x0000;
+u16 BACK_COLOR  = 0x0000;
 
-//����LCD��Ҫ����
-//Ĭ��Ϊ����
 _lcd_dev lcddev;
 	   
 
 void LCD_WR_REG(vu16 regval)
 {   
-	regval=regval;		//ʹ��-O2�Ż���ʱ��,����������ʱ
-	LCD->LCD_REG=regval;//д��Ҫд�ļĴ������	 
+	regval=regval;
+	LCD->LCD_REG=regval;
 }
 
 
 void LCD_WR_DATA(vu16 data)
 {	  
-	data=data;			//ʹ��-O2�Ż���ʱ��,����������ʱ
+	data=data;
 	LCD->LCD_RAM=data;		 
 }
 
 u16 LCD_RD_DATA(void)
 {
-	vu16 ram;			//��ֹ���Ż�
+	vu16 ram;
 	ram=LCD->LCD_RAM;	
 	return ram;	 
 }
@@ -39,8 +36,8 @@ u16 LCD_RD_DATA(void)
 
 void LCD_WriteReg(u16 LCD_Reg,u16 LCD_RegValue)
 {	
-	LCD->LCD_REG = LCD_Reg;		//д��Ҫд�ļĴ������	 
-	LCD->LCD_RAM = LCD_RegValue;//д������	    		 
+	LCD->LCD_REG = LCD_Reg;
+	LCD->LCD_RAM = LCD_RegValue;
 }
 
 
@@ -688,7 +685,7 @@ void LCD_Init(void)
 	lcddev.id<<=8;	 
 	lcddev.id|=LCD_RD_DATA();	//�������0X10	 
 
-	printf(" LCD ID:%x\r\n",lcddev.id); //��ӡLCD ID   
+	printf("LCD ID:%x\r\n",lcddev.id); //��ӡLCD ID
 	if(lcddev.id==0x5310)
 	{ 
 		LCD_WR_REG(0xED);
@@ -1388,7 +1385,7 @@ void LCD_Init(void)
     } 
 	LCD_Display_Dir(0);		//Ĭ��Ϊ����
 	LCD_LED=1;				//��������
-	LCD_Clear(WHITE);
+//	LCD_Clear(BLACK);
 }  
 
 

@@ -17,7 +17,6 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-
 #include "main.h"
 #include "dma.h"
 #include "spi.h"
@@ -47,7 +46,7 @@
 #include "ff.h"
 
 extern uint32_t system_ticks;
-uint8_t key_flag = 1;
+uint8_t key_flag = 0;
 
 /* USER CODE END Includes */
 
@@ -119,7 +118,6 @@ int main(void)
   MX_TIM2_Init();
   MX_USB_OTG_FS_PCD_Init();
   /* USER CODE BEGIN 2 */
-
   /* USER CODE END 2 */
 
   /* Infinite loop */

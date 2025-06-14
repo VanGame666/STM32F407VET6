@@ -1,0 +1,12 @@
+../Hardware/AT24C02/AT24C02.c:10:6:struct_regist	1
+../Hardware/AT24C02/AT24C02.c:22:6:time_decode	1
+../Hardware/AT24C02/AT24C02.c:29:10:time_code	1
+../Hardware/AT24C02/AT24C02.c:38:6:data_decode	1
+../Hardware/AT24C02/AT24C02.c:46:10:data_code	1
+../Hardware/AT24C02/AT24C02.c:58:6:AT24Write	1
+../Hardware/AT24C02/AT24C02.c:67:6:AT24Read	1
+../Hardware/AT24C02/AT24C02.c:74:6:write_fault_header	2
+../Hardware/AT24C02/AT24C02.c:88:6:read_fault_header	2
+../Hardware/AT24C02/AT24C02.c:97:6:write_fault_record	6
+../Hardware/AT24C02/AT24C02.c:132:9:read_fault_record	6
+../Hardware/AT24C02/AT24C02.c:161:6:backup_overwrite	3
