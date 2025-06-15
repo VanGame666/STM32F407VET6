@@ -7,7 +7,7 @@ void AppTask3(void* parameter);		TaskHandle_t AppTask3_Handle = NULL;
 void AppTask4(void* parameter);		TaskHandle_t AppTask4_Handle = NULL;
 
 TaskStruct TaskTable[]={
-{AppTask1,"AppTask1",1024,NULL,1,&AppTask1_Handle},
+{AppTask1,"AppTask1",1024,NULL,2,&AppTask1_Handle},
 {AppTask2,"AppTask2",128,NULL,1,&AppTask2_Handle},
 {AppTask3,"AppTask3",128,NULL,1,&AppTask3_Handle},
 {AppTask4,"AppTask4",128,NULL,1,&AppTask4_Handle},};
@@ -46,7 +46,7 @@ void AppTask1(void* parameter)
 	setup_ui(&guider_ui);
 	events_init(&guider_ui);
 
-    for(;;vTaskDelay(1))
+    for(;;vTaskDelay(10))
     {
     	lv_task_handler();
     }

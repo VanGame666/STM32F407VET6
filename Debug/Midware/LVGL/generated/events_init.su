@@ -1,5 +1,5 @@
-../Midware/LVGL/generated/events_init.c:19:13:screen_1_btn_2_event_handler	32	static
-../Midware/LVGL/generated/events_init.c:38:13:screen_btn_2_event_handler	32	static
-../Midware/LVGL/generated/events_init.c:33:6:events_init_screen_1	0	static
-../Midware/LVGL/generated/events_init.c:52:6:events_init_screen	0	static
-../Midware/LVGL/generated/events_init.c:58:6:events_init	0	static
+../Midware/LVGL/generated/events_init.c:21:13:screen_1_btn_2_event_handler	32	static
+../Midware/LVGL/generated/events_init.c:41:13:screen_btn_2_event_handler	32	static
+../Midware/LVGL/generated/events_init.c:36:6:events_init_screen_1	0	static
+../Midware/LVGL/generated/events_init.c:56:6:events_init_screen	0	static
+../Midware/LVGL/generated/events_init.c:62:6:events_init	0	static

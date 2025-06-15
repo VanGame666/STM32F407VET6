@@ -15,6 +15,8 @@
 #include "freemaster_client.h"
 #endif
 
+extern lv_timer_t *timer;
+extern lv_timer_t *chart_timer;
 
 static void screen_1_btn_2_event_handler (lv_event_t *e)
 {
@@ -22,6 +24,7 @@ static void screen_1_btn_2_event_handler (lv_event_t *e)
     switch (code) {
     case LV_EVENT_CLICKED:
     {
+    	lv_timer_pause(timer);
         ui_load_scr_animation(&guider_ui, &guider_ui.screen, guider_ui.screen_del, &guider_ui.screen_1_del, setup_scr_screen, LV_SCR_LOAD_ANIM_NONE, 0, 0, false, true);
         break;
     }
@@ -41,6 +44,7 @@ static void screen_btn_2_event_handler (lv_event_t *e)
     switch (code) {
     case LV_EVENT_CLICKED:
     {
+    	lv_timer_pause(chart_timer);
         ui_load_scr_animation(&guider_ui, &guider_ui.screen_1, guider_ui.screen_1_del, &guider_ui.screen_del, setup_scr_screen_1, LV_SCR_LOAD_ANIM_NONE, 0, 0, false, true);
         break;
     }

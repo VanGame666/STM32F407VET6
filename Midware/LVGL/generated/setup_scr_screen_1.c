@@ -10,7 +10,7 @@
 static lv_obj_t *meter = NULL;
 static lv_meter_indicator_t *indic = NULL;
 static uint8_t current_gear = 0;
-static lv_timer_t *timer = NULL;
+lv_timer_t *timer = NULL;
 static lv_obj_t *label_ref = NULL;
 static lv_obj_t *speed_label = NULL;
 static lv_ui *g_ui = NULL;
@@ -69,7 +69,7 @@ void setup_scr_screen_1(lv_ui *ui) {
 
     // 屏幕样式
     lv_obj_set_style_bg_opa(ui->screen_1, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui->screen_1, lv_color_hex(0x044333), LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui->screen_1, lv_color_hex(0x0f444a), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_grad_dir(ui->screen_1, LV_GRAD_DIR_NONE, LV_PART_MAIN|LV_STATE_DEFAULT);
 
     // 波形图表容器
@@ -126,7 +126,7 @@ void setup_scr_screen_1(lv_ui *ui) {
     ui->screen_1_btn_1_label = lv_label_create(ui->screen_1_btn_1);
     lv_label_set_text(ui->screen_1_btn_1_label, "PAUSE");
     lv_obj_align(ui->screen_1_btn_1_label, LV_ALIGN_CENTER, 0, 0);
-    lv_obj_set_pos(ui->screen_1_btn_1, 200, 350);
+    lv_obj_set_pos(ui->screen_1_btn_1, 30, 350);
     lv_obj_set_size(ui->screen_1_btn_1, 100, 40);
     // 按钮样式
     lv_obj_set_style_bg_opa(ui->screen_1_btn_1, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
@@ -147,7 +147,7 @@ void setup_scr_screen_1(lv_ui *ui) {
     ui->screen_1_btn_2_label = lv_label_create(ui->screen_1_btn_2);
     lv_label_set_text(ui->screen_1_btn_2_label, "Button");
     lv_obj_align(ui->screen_1_btn_2_label, LV_ALIGN_CENTER, 0, 0);
-    lv_obj_set_pos(ui->screen_1_btn_2, 30, 350);
+    lv_obj_set_pos(ui->screen_1_btn_2, 200, 350);
     lv_obj_set_size(ui->screen_1_btn_2, 100, 40);
 
     //Write style for screen_btn_2, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.

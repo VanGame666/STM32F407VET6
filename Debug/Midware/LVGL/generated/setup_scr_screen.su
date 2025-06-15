@@ -1,4 +1,4 @@
-../Midware/LVGL/generated/setup_scr_screen.c:22:6:update_chart	32	static
-../Midware/LVGL/generated/setup_scr_screen.c:174:13:slider_event_cb	8	static
-../Midware/LVGL/generated/setup_scr_screen.c:160:13:btn_event_cb	16	static
-../Midware/LVGL/generated/setup_scr_screen.c:53:6:setup_scr_screen	56	static
+../Midware/LVGL/generated/setup_scr_screen.c:62:13:slider_event_cb	8	static
+../Midware/LVGL/generated/setup_scr_screen.c:48:13:btn_event_cb	16	static
+../Midware/LVGL/generated/setup_scr_screen.c:17:13:update_chart	32	static
+../Midware/LVGL/generated/setup_scr_screen.c:76:6:setup_scr_screen	56	static

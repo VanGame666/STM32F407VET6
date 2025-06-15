@@ -13,13 +13,8 @@ lv_chart_series_t *ser;
 static float frequency = 1.0f; // 默认频率为1Hz
 static lv_obj_t *freq_label;   // 频率显示标签
 
-// 回调函数声明
-static void btn_event_cb(lv_event_t *e);
-static void slider_event_cb(lv_event_t *e);
-
-
 // 替换原有的update_chart函数
-void update_chart(lv_timer_t *timer) {
+static void update_chart(lv_timer_t *timer) {
     lv_obj_t *chart = (lv_obj_t *)timer->user_data;
 
     // 获取时间差值更高效的方式
@@ -49,6 +44,34 @@ void update_chart(lv_timer_t *timer) {
     // 优化：部分刷新而不是完整刷新
     lv_chart_refresh(chart);
 }
+// 按钮事件回调
+static void btn_event_cb(lv_event_t *e) {
+    lv_obj_t *btn = lv_event_get_target(e);
+    lv_timer_t *timer = lv_event_get_user_data(e);
+
+    if(timer->paused) {
+        lv_timer_resume(timer);
+        lv_label_set_text(lv_obj_get_child(btn, 0), "PAUSE");
+    } else {
+        lv_timer_pause(timer);
+        lv_label_set_text(lv_obj_get_child(btn, 0), "RESUME");
+    }
+}
+
+// 滑块事件回调 (控制频率)
+static void slider_event_cb(lv_event_t *e) {
+    lv_obj_t *slider = lv_event_get_target(e);
+    int16_t value = lv_slider_get_value(slider);
+
+    // 映射滑块值到频率 (1-50 对应 0.1-5.0Hz)
+    frequency = value * 0.1f;
+
+    // 更新频率标签
+    static char buf[32];
+    printf("FREQUENCY: %d Hz\r\n", value ) ;
+    lv_label_set_text(freq_label, buf);
+}
+
 
 void setup_scr_screen(lv_ui *ui) {
     ui->screen = lv_obj_create(NULL);
@@ -112,7 +135,7 @@ void setup_scr_screen(lv_ui *ui) {
     ui->screen_btn_1_label = lv_label_create(ui->screen_btn_1);
     lv_label_set_text(ui->screen_btn_1_label, "PAUSE");
     lv_obj_align(ui->screen_btn_1_label, LV_ALIGN_CENTER, 0, 0);
-    lv_obj_set_pos(ui->screen_btn_1, 200, 350);
+    lv_obj_set_pos(ui->screen_btn_1, 30, 350);
     lv_obj_set_size(ui->screen_btn_1, 100, 40);
     // 按钮样式
     lv_obj_set_style_bg_opa(ui->screen_btn_1, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
@@ -130,7 +153,7 @@ void setup_scr_screen(lv_ui *ui) {
     ui->screen_btn_2_label = lv_label_create(ui->screen_btn_2);
     lv_label_set_text(ui->screen_btn_2_label, "Button");
     lv_obj_align(ui->screen_btn_2_label, LV_ALIGN_CENTER, 0, 0);
-    lv_obj_set_pos(ui->screen_btn_2, 30, 350);
+    lv_obj_set_pos(ui->screen_btn_2, 200, 350);
     lv_obj_set_size(ui->screen_btn_2, 100, 40);
     //Write style for screen_btn_2, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
     lv_obj_set_style_bg_opa(ui->screen_btn_2, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
@@ -156,30 +179,4 @@ void setup_scr_screen(lv_ui *ui) {
 
 }
 
-// 按钮事件回调
-static void btn_event_cb(lv_event_t *e) {
-    lv_obj_t *btn = lv_event_get_target(e);
-    lv_timer_t *timer = lv_event_get_user_data(e);
 
-    if(timer->paused) {
-        lv_timer_resume(timer);
-        lv_label_set_text(lv_obj_get_child(btn, 0), "PAUSE");
-    } else {
-        lv_timer_pause(timer);
-        lv_label_set_text(lv_obj_get_child(btn, 0), "RESUME");
-    }
-}
-
-// 滑块事件回调 (控制频率)
-static void slider_event_cb(lv_event_t *e) {
-    lv_obj_t *slider = lv_event_get_target(e);
-    int16_t value = lv_slider_get_value(slider);
-
-    // 映射滑块值到频率 (1-50 对应 0.1-5.0Hz)
-    frequency = value * 0.1f;
-
-    // 更新频率标签
-    static char buf[32];
-    printf("FREQUENCY: %d Hz\r\n", value ) ;
-    lv_label_set_text(freq_label, buf);
-}
