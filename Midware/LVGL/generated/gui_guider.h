@@ -24,11 +24,16 @@ typedef struct
 	lv_obj_t *screen_1_btn_1;
 	lv_obj_t *screen_1_btn_1_label;
 	lv_obj_t *screen_1_cont_1;
+	lv_obj_t *screen_1_meter_1;
+	lv_meter_scale_t *screen_1_meter_1_scale_0;
+	lv_meter_indicator_t *screen_1_meter_1_scale_0_ndline_0;
 	lv_obj_t *screen_1_btn_2;
 	lv_obj_t *screen_1_btn_2_label;
 	lv_obj_t *screen;
 	bool screen_del;
 	lv_obj_t *screen_cont_1;
+	lv_obj_t *screen_chart_1;
+	lv_chart_series_t *screen_chart_1_0;
 	lv_obj_t *screen_btn_1;
 	lv_obj_t *screen_btn_1_label;
 	lv_obj_t *screen_slider_1;

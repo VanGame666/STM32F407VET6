@@ -5,7 +5,7 @@ Midware/LVGL/src/draw/sw/lv_draw_sw_dither.o: \
  ../Midware/LVGL/src/draw/sw/../../core/../misc/lv_area.h \
  ../Midware/LVGL/src/draw/sw/../../core/../misc/../lv_conf_internal.h \
  ../Midware/LVGL/src/draw/sw/../../core/../misc/../lv_conf_kconfig.h \
- E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h \
+ E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/draw/sw/lv_draw_sw_gradient.h \
  ../Midware/LVGL/src/draw/sw/../../misc/lv_color.h \
  ../Midware/LVGL/src/draw/sw/../../misc/../lv_conf_internal.h \
@@ -31,7 +31,7 @@ Midware/LVGL/src/draw/sw/lv_draw_sw_dither.o: \
 ../Midware/LVGL/src/draw/sw/../../core/../misc/lv_area.h:
 ../Midware/LVGL/src/draw/sw/../../core/../misc/../lv_conf_internal.h:
 ../Midware/LVGL/src/draw/sw/../../core/../misc/../lv_conf_kconfig.h:
-E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h:
+E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/draw/sw/lv_draw_sw_gradient.h:
 ../Midware/LVGL/src/draw/sw/../../misc/lv_color.h:
 ../Midware/LVGL/src/draw/sw/../../misc/../lv_conf_internal.h:

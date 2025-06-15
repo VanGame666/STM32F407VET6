@@ -104,19 +104,7 @@ void setup_scr_screen(lv_ui *ui) {
     ser = lv_chart_add_series(chart, lv_palette_main(LV_PALETTE_BLUE), LV_CHART_AXIS_PRIMARY_Y);
     lv_obj_set_style_line_width(chart, 3, LV_PART_ITEMS);
 
-//    // 添加坐标轴标签
-//    lv_obj_t *x_label = lv_label_create(chart);
-//    lv_label_set_text(x_label, "Time");
-//    lv_obj_align(x_label, LV_ALIGN_BOTTOM_MID, 0, 20);
-//    lv_obj_set_style_text_color(x_label, lv_color_hex(0xcccccc), 0);
-//
-//    lv_obj_t *y_label = lv_label_create(chart);
-//    lv_label_set_text(y_label, "Amplitude");
-//    lv_obj_align(y_label, LV_ALIGN_LEFT_MID, -25, 0);
-//    lv_obj_set_style_text_color(y_label, lv_color_hex(0xcccccc), 0);
-//    lv_obj_set_style_transform_angle(y_label, 900, 0);
 
-    // 创建定时器更新波形 - 固定50ms刷新率
     chart_timer = lv_timer_create(update_chart, 50, chart);
 
     // 控制按钮
@@ -126,17 +114,15 @@ void setup_scr_screen(lv_ui *ui) {
     lv_obj_align(ui->screen_btn_1_label, LV_ALIGN_CENTER, 0, 0);
     lv_obj_set_pos(ui->screen_btn_1, 200, 350);
     lv_obj_set_size(ui->screen_btn_1, 100, 40);
-
-    // 添加事件回调
-    lv_obj_add_event_cb(ui->screen_btn_1, btn_event_cb, LV_EVENT_CLICKED, chart_timer);
-
-
     // 按钮样式
     lv_obj_set_style_bg_opa(ui->screen_btn_1, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui->screen_btn_1, lv_color_hex(0x2195f6), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_radius(ui->screen_btn_1, 5, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_color(ui->screen_btn_1, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui->screen_btn_1, &lv_font_montserrat_14, LV_PART_MAIN|LV_STATE_DEFAULT);
+    // 添加事件回调
+    lv_obj_add_event_cb(ui->screen_btn_1, btn_event_cb, LV_EVENT_CLICKED, chart_timer);
+
 
 
     //Write codes screen_btn_2
@@ -146,7 +132,6 @@ void setup_scr_screen(lv_ui *ui) {
     lv_obj_align(ui->screen_btn_2_label, LV_ALIGN_CENTER, 0, 0);
     lv_obj_set_pos(ui->screen_btn_2, 30, 350);
     lv_obj_set_size(ui->screen_btn_2, 100, 40);
-
     //Write style for screen_btn_2, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
     lv_obj_set_style_bg_opa(ui->screen_btn_2, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui->screen_btn_2, lv_color_hex(0x2195f6), LV_PART_MAIN|LV_STATE_DEFAULT);
@@ -162,7 +147,6 @@ void setup_scr_screen(lv_ui *ui) {
     lv_obj_set_pos(ui->screen_slider_1, 30, 420);
     lv_obj_set_size(ui->screen_slider_1, 270, 10);
 
-    // 滑块事件
     lv_obj_add_event_cb(ui->screen_slider_1, slider_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
 
 

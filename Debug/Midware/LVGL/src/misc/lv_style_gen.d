@@ -4,7 +4,7 @@ Midware/LVGL/src/misc/lv_style_gen.o: \
  ../Midware/LVGL/src/misc/../font/lv_font.h \
  ../Midware/LVGL/src/misc/../font/../lv_conf_internal.h \
  ../Midware/LVGL/src/misc/../font/../lv_conf_kconfig.h \
- E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h \
+ E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/misc/../font/lv_symbol_def.h \
  ../Midware/LVGL/src/misc/../font/../misc/lv_area.h \
  ../Midware/LVGL/src/misc/../font/../misc/../lv_conf_internal.h \
@@ -20,7 +20,7 @@ Midware/LVGL/src/misc/lv_style_gen.o: \
 ../Midware/LVGL/src/misc/../font/lv_font.h:
 ../Midware/LVGL/src/misc/../font/../lv_conf_internal.h:
 ../Midware/LVGL/src/misc/../font/../lv_conf_kconfig.h:
-E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h:
+E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/misc/../font/lv_symbol_def.h:
 ../Midware/LVGL/src/misc/../font/../misc/lv_area.h:
 ../Midware/LVGL/src/misc/../font/../misc/../lv_conf_internal.h:

@@ -63,19 +63,19 @@ void setup_scr_screen_1(lv_ui *ui) {
     g_ui = ui;
 
 
-    ui->screen = lv_obj_create(NULL);
-    lv_obj_set_size(ui->screen, 320, 480);
+    ui->screen_1 = lv_obj_create(NULL);
+    lv_obj_set_size(ui->screen_1, 320, 480);
     lv_obj_set_scrollbar_mode(ui->screen, LV_SCROLLBAR_MODE_OFF);
 
     // 屏幕样式
-    lv_obj_set_style_bg_opa(ui->screen, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui->screen, lv_color_hex(0x044333), LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_grad_dir(ui->screen, LV_GRAD_DIR_NONE, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui->screen_1, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui->screen_1, lv_color_hex(0x044333), LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_grad_dir(ui->screen_1, LV_GRAD_DIR_NONE, LV_PART_MAIN|LV_STATE_DEFAULT);
 
-    // 仪表盘容器
-    ui->screen_1_cont_1 = lv_obj_create(ui->screen);
-    lv_obj_set_pos(ui->screen_1_cont_1, 11, 10);
-    lv_obj_set_size(ui->screen_1_cont_1, 300, 200);
+    // 波形图表容器
+    ui->screen_1_cont_1 = lv_obj_create(ui->screen_1);
+    lv_obj_set_pos(ui->screen_1_cont_1, 10, 10);
+    lv_obj_set_size(ui->screen_1_cont_1, 300, 300);
     lv_obj_set_scrollbar_mode(ui->screen_1_cont_1, LV_SCROLLBAR_MODE_OFF);
 
     // 容器样式
@@ -85,14 +85,14 @@ void setup_scr_screen_1(lv_ui *ui) {
     lv_obj_set_style_border_side(ui->screen_1_cont_1, LV_BORDER_SIDE_FULL, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_radius(ui->screen_1_cont_1, 10, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui->screen_1_cont_1, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui->screen_1_cont_1, lv_color_hex(0x2a2a2a), LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_grad_dir(ui->screen_1_cont_1, LV_GRAD_DIR_NONE, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_pad_all(ui->screen_1_cont_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
-    lv_obj_set_style_shadow_width(ui->screen_1_cont_1, 0, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui->screen_1_cont_1, lv_color_hex(0x1a1a2e), LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_pad_all(ui->screen_1_cont_1, 5, LV_PART_MAIN|LV_STATE_DEFAULT);
+
+
     // 创建仪表盘
     meter = lv_meter_create(ui->screen_1_cont_1);
     lv_obj_center(meter);
-    lv_obj_set_size(meter, 180, 180);
+    lv_obj_set_size(meter, 250, 250);
 
     // 添加刻度
     lv_meter_scale_t *scale = lv_meter_add_scale(meter);
@@ -116,20 +116,18 @@ void setup_scr_screen_1(lv_ui *ui) {
     lv_label_set_text(title, "FAST GEAR CONTROL");
     lv_obj_set_style_text_font(title, &lv_font_montserrat_14, 0);
     lv_obj_set_style_text_color(title, lv_color_white(), 0);
-    lv_obj_align(title, LV_ALIGN_TOP_MID, 0, 10);
+    lv_obj_align(title, LV_ALIGN_TOP_MID, 0, 0);
 
     // 定时器 (初始50ms周期)
     timer = lv_timer_create(timer_cb, 1, NULL);
 
     // 按钮控件
-    ui->screen_1_btn_1 = lv_btn_create(ui->screen);
+    ui->screen_1_btn_1 = lv_btn_create(ui->screen_1);
     ui->screen_1_btn_1_label = lv_label_create(ui->screen_1_btn_1);
     lv_label_set_text(ui->screen_1_btn_1_label, "PAUSE");
     lv_obj_align(ui->screen_1_btn_1_label, LV_ALIGN_CENTER, 0, 0);
-    lv_obj_set_pos(ui->screen_1_btn_1, 200, 240);
-    lv_obj_set_size(ui->screen_1_btn_1, 100, 50);
-    lv_obj_add_event_cb(ui->screen_1_btn_1, btn_event_cb, LV_EVENT_CLICKED, NULL);
-
+    lv_obj_set_pos(ui->screen_1_btn_1, 200, 350);
+    lv_obj_set_size(ui->screen_1_btn_1, 100, 40);
     // 按钮样式
     lv_obj_set_style_bg_opa(ui->screen_1_btn_1, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui->screen_1_btn_1, lv_color_hex(0x2195f6), LV_PART_MAIN|LV_STATE_DEFAULT);
@@ -137,9 +135,16 @@ void setup_scr_screen_1(lv_ui *ui) {
     lv_obj_set_style_text_color(ui->screen_1_btn_1, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui->screen_1_btn_1, &lv_font_montserrat_14, LV_PART_MAIN|LV_STATE_DEFAULT);
 
+    lv_obj_add_event_cb(ui->screen_1_btn_1, btn_event_cb, LV_EVENT_CLICKED, NULL);
+
+
+
+
+
+
     //Write codes screen_btn_2
-    ui->screen_1_btn_2 = lv_btn_create(ui->screen);
-    ui->screen_1_btn_2_label = lv_label_create(ui->screen_btn_2);
+    ui->screen_1_btn_2 = lv_btn_create(ui->screen_1);
+    ui->screen_1_btn_2_label = lv_label_create(ui->screen_1_btn_2);
     lv_label_set_text(ui->screen_1_btn_2_label, "Button");
     lv_obj_align(ui->screen_1_btn_2_label, LV_ALIGN_CENTER, 0, 0);
     lv_obj_set_pos(ui->screen_1_btn_2, 30, 350);
@@ -155,41 +160,15 @@ void setup_scr_screen_1(lv_ui *ui) {
 
 
     // 滑动条控件
-    ui->screen_1_slider_1 = lv_slider_create(ui->screen);
+    ui->screen_1_slider_1 = lv_slider_create(ui->screen_1);
     lv_slider_set_range(ui->screen_1_slider_1, 1, 10);
     lv_slider_set_value(ui->screen_1_slider_1, 5, LV_ANIM_OFF);
-    lv_obj_set_pos(ui->screen_1_slider_1, 32, 353);
-    lv_obj_set_size(ui->screen_1_slider_1, 251, 6);
+    lv_obj_set_pos(ui->screen_1_slider_1, 30, 420);
+    lv_obj_set_size(ui->screen_1_slider_1, 270, 10);
     lv_obj_add_event_cb(ui->screen_1_slider_1, slider_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
 
-    // 速度标签
-    speed_label = lv_label_create(ui->screen);
-    lv_label_set_text(speed_label, "RATE: 50 ms/gear");
-    lv_obj_set_style_text_color(speed_label, lv_color_white(), 0);
-    lv_obj_set_pos(speed_label, 32, 330);
 
-    // 添加滑块标签 - 使用现有字体
-    for(int i = 0; i < 10; i++) {
-        char buf[5];
-        snprintf(buf, sizeof(buf), "%d", (i + 1) * 10);
-        lv_obj_t *label = lv_label_create(ui->screen);
-        lv_label_set_text(label, buf);
-
-        // 使用可用字体
-        lv_obj_set_style_text_font(label, &lv_font_montserrat_12, 0);
-        lv_obj_set_style_text_color(label, lv_color_hex(0xFFFFFF), 0);
-        lv_obj_set_pos(label, 32 + i * 25, 370);
-
-        // 主刻度点
-        if((i+1) % 2 == 0) {
-            lv_obj_t *dot = lv_obj_create(ui->screen);
-            lv_obj_set_size(dot, 4, 4);
-            lv_obj_set_style_bg_color(dot, lv_color_hex(0x2195f6), 0);
-            lv_obj_set_style_bg_opa(dot, LV_OPA_COVER, 0);
-            lv_obj_set_style_radius(dot, LV_RADIUS_CIRCLE, 0);
-            lv_obj_set_pos(dot, 32 + i * 25, 350);
-        }
-    }
     // 更新布局
-    lv_obj_update_layout(ui->screen);
+    lv_obj_update_layout(ui->screen_1);
+    events_init_screen_1(ui);
 }

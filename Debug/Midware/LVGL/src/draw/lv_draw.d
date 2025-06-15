@@ -2,7 +2,7 @@ Midware/LVGL/src/draw/lv_draw.o: ../Midware/LVGL/src/draw/lv_draw.c \
  ../Midware/LVGL/src/draw/lv_draw.h \
  ../Midware/LVGL/src/draw/../lv_conf_internal.h \
  ../Midware/LVGL/src/draw/../lv_conf_kconfig.h \
- E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h \
+ E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/draw/../misc/lv_style.h \
  ../Midware/LVGL/src/draw/../misc/../font/lv_font.h \
  ../Midware/LVGL/src/draw/../misc/../font/../lv_conf_internal.h \
@@ -69,7 +69,7 @@ Midware/LVGL/src/draw/lv_draw.o: ../Midware/LVGL/src/draw/lv_draw.c \
 ../Midware/LVGL/src/draw/lv_draw.h:
 ../Midware/LVGL/src/draw/../lv_conf_internal.h:
 ../Midware/LVGL/src/draw/../lv_conf_kconfig.h:
-E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h:
+E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/draw/../misc/lv_style.h:
 ../Midware/LVGL/src/draw/../misc/../font/lv_font.h:
 ../Midware/LVGL/src/draw/../misc/../font/../lv_conf_internal.h:

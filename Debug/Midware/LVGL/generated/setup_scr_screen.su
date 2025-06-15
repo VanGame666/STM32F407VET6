@@ -1,4 +1,4 @@
 ../Midware/LVGL/generated/setup_scr_screen.c:22:6:update_chart	32	static
-../Midware/LVGL/generated/setup_scr_screen.c:190:13:slider_event_cb	8	static
-../Midware/LVGL/generated/setup_scr_screen.c:176:13:btn_event_cb	16	static
+../Midware/LVGL/generated/setup_scr_screen.c:174:13:slider_event_cb	8	static
+../Midware/LVGL/generated/setup_scr_screen.c:160:13:btn_event_cb	16	static
 ../Midware/LVGL/generated/setup_scr_screen.c:53:6:setup_scr_screen	56	static

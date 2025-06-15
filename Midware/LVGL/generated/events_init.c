@@ -15,8 +15,6 @@
 #include "freemaster_client.h"
 #endif
 
-extern lv_ui guider_ui;
-
 
 static void screen_1_btn_2_event_handler (lv_event_t *e)
 {

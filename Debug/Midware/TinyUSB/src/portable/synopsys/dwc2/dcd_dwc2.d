@@ -1,18 +1,18 @@
 Midware/TinyUSB/src/portable/synopsys/dwc2/dcd_dwc2.o: \
  ../Midware/TinyUSB/src/portable/synopsys/dwc2/dcd_dwc2.c \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/tusb_option.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_compiler.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/tusb_config.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_mcu.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/device/dcd.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_common.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_compiler.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_verify.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_types.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_debug.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/osal/osal.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/osal/osal_none.h \
- E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_fifo.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/tusb_option.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_compiler.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/tusb_config.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_mcu.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/device/dcd.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_common.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_compiler.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_verify.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_types.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_debug.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/osal/osal.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/osal/osal_none.h \
+ E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_fifo.h \
  ../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_common.h \
  ../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_type.h \
  ../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_stm32.h \
@@ -50,19 +50,19 @@ Midware/TinyUSB/src/portable/synopsys/dwc2/dcd_dwc2.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/tusb_option.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_compiler.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/tusb_config.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_mcu.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/device/dcd.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_common.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_compiler.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_verify.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_types.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_debug.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/osal/osal.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/osal/osal_none.h:
-E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_fifo.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/tusb_option.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_compiler.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/tusb_config.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_mcu.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/device/dcd.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_common.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_compiler.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_verify.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_types.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_debug.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/osal/osal.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/osal/osal_none.h:
+E:/My_Work/STM32F407VET6/Midware/TinyUSB/src/common/tusb_fifo.h:
 ../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_common.h:
 ../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_type.h:
 ../Midware/TinyUSB/src/portable/synopsys/dwc2/dwc2_stm32.h:

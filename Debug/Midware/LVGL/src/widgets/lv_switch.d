@@ -3,7 +3,7 @@ Midware/LVGL/src/widgets/lv_switch.o: \
  ../Midware/LVGL/src/widgets/lv_switch.h \
  ../Midware/LVGL/src/widgets/../lv_conf_internal.h \
  ../Midware/LVGL/src/widgets/../lv_conf_kconfig.h \
- E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h \
+ E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/widgets/../core/lv_obj.h \
  ../Midware/LVGL/src/widgets/../core/../lv_conf_internal.h \
  ../Midware/LVGL/src/widgets/../core/../misc/lv_style.h \
@@ -99,7 +99,7 @@ Midware/LVGL/src/widgets/lv_switch.o: \
 ../Midware/LVGL/src/widgets/lv_switch.h:
 ../Midware/LVGL/src/widgets/../lv_conf_internal.h:
 ../Midware/LVGL/src/widgets/../lv_conf_kconfig.h:
-E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h:
+E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/widgets/../core/lv_obj.h:
 ../Midware/LVGL/src/widgets/../core/../lv_conf_internal.h:
 ../Midware/LVGL/src/widgets/../core/../misc/lv_style.h:

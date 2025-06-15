@@ -2,7 +2,7 @@ Midware/LVGL/src/misc/lv_anim.o: ../Midware/LVGL/src/misc/lv_anim.c \
  ../Midware/LVGL/src/misc/lv_anim.h \
  ../Midware/LVGL/src/misc/../lv_conf_internal.h \
  ../Midware/LVGL/src/misc/../lv_conf_kconfig.h \
- E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h \
+ E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/misc/../hal/lv_hal_tick.h \
  ../Midware/LVGL/src/misc/../hal/../lv_conf_internal.h \
  ../Midware/LVGL/src/misc/lv_assert.h ../Midware/LVGL/src/misc/lv_log.h \
@@ -28,7 +28,7 @@ Midware/LVGL/src/misc/lv_anim.o: ../Midware/LVGL/src/misc/lv_anim.c \
 ../Midware/LVGL/src/misc/lv_anim.h:
 ../Midware/LVGL/src/misc/../lv_conf_internal.h:
 ../Midware/LVGL/src/misc/../lv_conf_kconfig.h:
-E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h:
+E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/misc/../hal/lv_hal_tick.h:
 ../Midware/LVGL/src/misc/../hal/../lv_conf_internal.h:
 ../Midware/LVGL/src/misc/lv_assert.h:

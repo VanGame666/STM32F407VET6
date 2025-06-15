@@ -1,6 +1,6 @@
 Midware/FreeRTOS/stream_buffer.o: ../Midware/FreeRTOS/stream_buffer.c \
- E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/FreeRTOS.h \
- E:/My_Work/STM32F407VE/Midware/FreeRTOS/FreeRTOSConfig.h \
+ E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/FreeRTOS.h \
+ E:/My_Work/STM32F407VET6/Midware/FreeRTOS/FreeRTOSConfig.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h \
  ../Drivers/CMSIS/Include/core_cm4.h \
@@ -35,16 +35,16 @@ Midware/FreeRTOS/stream_buffer.o: ../Midware/FreeRTOS/stream_buffer.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
- E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/projdefs.h \
- E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/portable.h \
- E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/deprecated_definitions.h \
- E:/My_Work/STM32F407VE/Midware/FreeRTOS/portable/portmacro.h \
- E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/mpu_wrappers.h \
- E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/task.h \
- E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/list.h \
- E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/stream_buffer.h
-E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/FreeRTOS.h:
-E:/My_Work/STM32F407VE/Midware/FreeRTOS/FreeRTOSConfig.h:
+ E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/projdefs.h \
+ E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/portable.h \
+ E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/deprecated_definitions.h \
+ E:/My_Work/STM32F407VET6/Midware/FreeRTOS/portable/portmacro.h \
+ E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/mpu_wrappers.h \
+ E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/task.h \
+ E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/list.h \
+ E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/stream_buffer.h
+E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/FreeRTOS.h:
+E:/My_Work/STM32F407VET6/Midware/FreeRTOS/FreeRTOSConfig.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:
 ../Drivers/CMSIS/Include/core_cm4.h:
@@ -79,11 +79,11 @@ E:/My_Work/STM32F407VE/Midware/FreeRTOS/FreeRTOSConfig.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h:
-E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/projdefs.h:
-E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/portable.h:
-E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/deprecated_definitions.h:
-E:/My_Work/STM32F407VE/Midware/FreeRTOS/portable/portmacro.h:
-E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/mpu_wrappers.h:
-E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/task.h:
-E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/list.h:
-E:/My_Work/STM32F407VE/Midware/FreeRTOS/include/stream_buffer.h:
+E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/projdefs.h:
+E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/portable.h:
+E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/deprecated_definitions.h:
+E:/My_Work/STM32F407VET6/Midware/FreeRTOS/portable/portmacro.h:
+E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/mpu_wrappers.h:
+E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/task.h:
+E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/list.h:
+E:/My_Work/STM32F407VET6/Midware/FreeRTOS/include/stream_buffer.h:

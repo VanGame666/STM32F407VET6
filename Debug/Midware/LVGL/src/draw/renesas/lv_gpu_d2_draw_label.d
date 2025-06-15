@@ -4,7 +4,7 @@ Midware/LVGL/src/draw/renesas/lv_gpu_d2_draw_label.o: \
  ../Midware/LVGL/src/draw/renesas/../../draw/../misc/lv_bidi.h \
  ../Midware/LVGL/src/draw/renesas/../../draw/../misc/../lv_conf_internal.h \
  ../Midware/LVGL/src/draw/renesas/../../draw/../misc/../lv_conf_kconfig.h \
- E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h \
+ E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/draw/renesas/../../draw/../misc/lv_txt.h \
  ../Midware/LVGL/src/draw/renesas/../../draw/../misc/lv_area.h \
  ../Midware/LVGL/src/draw/renesas/../../draw/../misc/../font/lv_font.h \
@@ -93,7 +93,7 @@ Midware/LVGL/src/draw/renesas/lv_gpu_d2_draw_label.o: \
 ../Midware/LVGL/src/draw/renesas/../../draw/../misc/lv_bidi.h:
 ../Midware/LVGL/src/draw/renesas/../../draw/../misc/../lv_conf_internal.h:
 ../Midware/LVGL/src/draw/renesas/../../draw/../misc/../lv_conf_kconfig.h:
-E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h:
+E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/draw/renesas/../../draw/../misc/lv_txt.h:
 ../Midware/LVGL/src/draw/renesas/../../draw/../misc/lv_area.h:
 ../Midware/LVGL/src/draw/renesas/../../draw/../misc/../font/lv_font.h:

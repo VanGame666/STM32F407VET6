@@ -4,7 +4,7 @@ Midware/LVGL/src/extra/libs/gif/gifdec.o: \
  ../Midware/LVGL/src/extra/libs/gif/../../../misc/lv_fs.h \
  ../Midware/LVGL/src/extra/libs/gif/../../../misc/../lv_conf_internal.h \
  ../Midware/LVGL/src/extra/libs/gif/../../../misc/../lv_conf_kconfig.h \
- E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h \
+ E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/extra/libs/gif/../../../misc/lv_log.h \
  ../Midware/LVGL/src/extra/libs/gif/../../../misc/lv_types.h \
  ../Midware/LVGL/src/extra/libs/gif/../../../misc/lv_mem.h \
@@ -17,7 +17,7 @@ Midware/LVGL/src/extra/libs/gif/gifdec.o: \
 ../Midware/LVGL/src/extra/libs/gif/../../../misc/lv_fs.h:
 ../Midware/LVGL/src/extra/libs/gif/../../../misc/../lv_conf_internal.h:
 ../Midware/LVGL/src/extra/libs/gif/../../../misc/../lv_conf_kconfig.h:
-E:/My_Work/STM32F407VE/Midware/LVGL/lv_conf.h:
+E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/extra/libs/gif/../../../misc/lv_log.h:
 ../Midware/LVGL/src/extra/libs/gif/../../../misc/lv_types.h:
 ../Midware/LVGL/src/extra/libs/gif/../../../misc/lv_mem.h:
