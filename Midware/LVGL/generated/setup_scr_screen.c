@@ -1,9 +1,9 @@
 #include "lvgl.h"
-#include <stdio.h>
 #include "gui_guider.h"
 #include "events_init.h"
 #include "widgets_init.h"
 #include "custom.h"
+#include <stdio.h>
 #include <math.h>
 
 
@@ -130,6 +130,7 @@ void setup_scr_screen(lv_ui *ui) {
     // 添加事件回调
     lv_obj_add_event_cb(ui->screen_btn_1, btn_event_cb, LV_EVENT_CLICKED, chart_timer);
 
+
     // 按钮样式
     lv_obj_set_style_bg_opa(ui->screen_btn_1, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui->screen_btn_1, lv_color_hex(0x2195f6), LV_PART_MAIN|LV_STATE_DEFAULT);
@@ -137,45 +138,38 @@ void setup_scr_screen(lv_ui *ui) {
     lv_obj_set_style_text_color(ui->screen_btn_1, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui->screen_btn_1, &lv_font_montserrat_14, LV_PART_MAIN|LV_STATE_DEFAULT);
 
+
+    //Write codes screen_btn_2
+    ui->screen_btn_2 = lv_btn_create(ui->screen);
+    ui->screen_btn_2_label = lv_label_create(ui->screen_btn_2);
+    lv_label_set_text(ui->screen_btn_2_label, "Button");
+    lv_obj_align(ui->screen_btn_2_label, LV_ALIGN_CENTER, 0, 0);
+    lv_obj_set_pos(ui->screen_btn_2, 30, 350);
+    lv_obj_set_size(ui->screen_btn_2, 100, 40);
+
+    //Write style for screen_btn_2, Part: LV_PART_MAIN, State: LV_STATE_DEFAULT.
+    lv_obj_set_style_bg_opa(ui->screen_btn_2, 255, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui->screen_btn_2, lv_color_hex(0x2195f6), LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_radius(ui->screen_btn_2, 5, LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_color(ui->screen_btn_2, lv_color_hex(0xffffff), LV_PART_MAIN|LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui->screen_btn_2, &lv_font_montserrat_14, LV_PART_MAIN|LV_STATE_DEFAULT);
+
+
     // 频率控制滑块 (0.1Hz 到 5.0Hz)
     ui->screen_slider_1 = lv_slider_create(ui->screen);
     lv_slider_set_range(ui->screen_slider_1, 1, 50); // 1-50对应0.1-5.0Hz
     lv_slider_set_value(ui->screen_slider_1, 10, LV_ANIM_OFF); // 默认1.0Hz
-    lv_obj_set_pos(ui->screen_slider_1, 30, 350);
-    lv_obj_set_size(ui->screen_slider_1, 150, 20);
+    lv_obj_set_pos(ui->screen_slider_1, 30, 420);
+    lv_obj_set_size(ui->screen_slider_1, 270, 10);
 
     // 滑块事件
     lv_obj_add_event_cb(ui->screen_slider_1, slider_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
 
-    // 频率标签
-    freq_label = lv_label_create(ui->screen);
-    lv_label_set_text(freq_label, "FREQUENCY: 1.00 Hz");
-    lv_obj_set_style_text_color(freq_label, lv_color_white(), 0);
-    lv_obj_set_pos(freq_label, 30, 330);
-
-    // 刻度标记 (0.5Hz, 1.0Hz, 2.0Hz, 3.0Hz, 4.0Hz, 5.0Hz)
-    const int markers[] = {5, 10, 20, 30, 40, 50}; // 滑块值
-    const char* texts[] = {"0.5", "1.0", "2.0", "3.0", "4.0", "5.0"};
-
-    for(int i = 0; i < 6; i++) {
-        // 标签 - 使用14号字体，因为我们没有10号字体
-        lv_obj_t *label = lv_label_create(ui->screen);
-        lv_label_set_text(label, texts[i]);
-        lv_obj_set_style_text_font(label, &lv_font_montserrat_14, 0);
-        lv_obj_set_style_text_color(label, lv_color_hex(0xFFFFFF), 0);
-        lv_obj_set_pos(label, 30 + markers[i] * 3, 370); // 30px起始位置 + 每单位3px
-
-        // 刻度点
-        lv_obj_t *dot = lv_obj_create(ui->screen);
-        lv_obj_set_size(dot, 4, 4);
-        lv_obj_set_style_bg_color(dot, lv_color_hex(0x2195f6), 0);
-        lv_obj_set_style_bg_opa(dot, LV_OPA_COVER, 0);
-        lv_obj_set_style_radius(dot, LV_RADIUS_CIRCLE, 0);
-        lv_obj_set_pos(dot, 30 + markers[i] * 3, 350);
-    }
 
     // 更新布局
     lv_obj_update_layout(ui->screen);
+    events_init_screen(ui);
+
 }
 
 // 按钮事件回调
@@ -202,6 +196,6 @@ static void slider_event_cb(lv_event_t *e) {
 
     // 更新频率标签
     static char buf[32];
-    snprintf(buf, sizeof(buf), "FREQUENCY: %.2f Hz", frequency);
+    printf("FREQUENCY: %d Hz\r\n", value ) ;
     lv_label_set_text(freq_label, buf);
 }

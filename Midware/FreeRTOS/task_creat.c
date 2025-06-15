@@ -4,11 +4,14 @@
 void AppTask1(void* parameter);		TaskHandle_t AppTask1_Handle = NULL;
 void AppTask2(void* parameter);		TaskHandle_t AppTask2_Handle = NULL;
 void AppTask3(void* parameter);		TaskHandle_t AppTask3_Handle = NULL;
+void AppTask4(void* parameter);		TaskHandle_t AppTask4_Handle = NULL;
 
 TaskStruct TaskTable[]={
-{AppTask1,"AppTask1",512,NULL,1,&AppTask1_Handle},
+{AppTask1,"AppTask1",1024,NULL,1,&AppTask1_Handle},
 {AppTask2,"AppTask2",128,NULL,1,&AppTask2_Handle},
-{AppTask3,"AppTask3",128,NULL,1,&AppTask3_Handle},};
+{AppTask3,"AppTask3",128,NULL,1,&AppTask3_Handle},
+{AppTask4,"AppTask4",128,NULL,1,&AppTask4_Handle},};
+
 
 /**************************************************  **************************************************/
 void task_creat(void)
@@ -34,9 +37,9 @@ void task_creat(void)
 }
 
 /**************************************************  **************************************************/
+lv_ui guider_ui;
 void AppTask1(void* parameter)
 {
-	lv_ui guider_ui;
 	lv_init();
 	lv_port_disp_init();
 	lv_port_indev_init();
@@ -86,6 +89,21 @@ void AppTask3(void* parameter)
     		key_flag = 0;
     	}
     	if(system_ticks >= 500){system_ticks = 0;HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_2);}
+    }
+}
+
+/**************************************************  **************************************************/
+void AppTask4(void* parameter)
+{
+	FATFS fs;  // 文件系统对象
+	FIL fil;   // 文件对象
+	UINT bw;   // 写入字节数
+
+    for(;;vTaskDelay(10))
+    {
+//    	f_open(&fil, "0:/test.txt", FA_WRITE | FA_CREATE_ALWAYS);
+//    	f_write(&fil, "Hello STM32!", 12, &bw);
+//    	f_close(&fil);
     }
 }
 

@@ -314,6 +314,8 @@ Midware/FreeRTOS/portable/port.o: ../Midware/FreeRTOS/portable/port.c \
  E:/My_Work/STM32F407VE/Midware/TinyUSB/src/device/usbd.h \
  E:/My_Work/STM32F407VE/Midware/TinyUSB/src/class/cdc/cdc_device.h \
  E:/My_Work/STM32F407VE/Midware/TinyUSB/src/class/cdc/cdc.h \
+ E:/My_Work/STM32F407VE/Midware/FatFS/ff.h \
+ E:/My_Work/STM32F407VE/Midware/FatFS/ffconf.h \
  E:/My_Work/STM32F407VE/Hardware/AT24C02/AT24C02.h \
  E:/My_Work/STM32F407VE/Protocol/Soft_Check.h \
  E:/My_Work/STM32F407VE/Protocol/Soft_I2C.h
@@ -633,6 +635,8 @@ E:/My_Work/STM32F407VE/Midware/TinyUSB/src/common/tusb_fifo.h:
 E:/My_Work/STM32F407VE/Midware/TinyUSB/src/device/usbd.h:
 E:/My_Work/STM32F407VE/Midware/TinyUSB/src/class/cdc/cdc_device.h:
 E:/My_Work/STM32F407VE/Midware/TinyUSB/src/class/cdc/cdc.h:
+E:/My_Work/STM32F407VE/Midware/FatFS/ff.h:
+E:/My_Work/STM32F407VE/Midware/FatFS/ffconf.h:
 E:/My_Work/STM32F407VE/Hardware/AT24C02/AT24C02.h:
 E:/My_Work/STM32F407VE/Protocol/Soft_Check.h:
 E:/My_Work/STM32F407VE/Protocol/Soft_I2C.h:

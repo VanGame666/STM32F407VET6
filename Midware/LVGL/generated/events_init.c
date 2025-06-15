@@ -10,14 +10,15 @@
 #include "events_init.h"
 #include <stdio.h>
 #include "lvgl.h"
-#include "main.h"
 
 #if LV_USE_GUIDER_SIMULATOR && LV_USE_FREEMASTER
 #include "freemaster_client.h"
 #endif
 
+extern lv_ui guider_ui;
 
-static void screen_1_event_handler (lv_event_t *e)
+
+static void screen_1_btn_2_event_handler (lv_event_t *e)
 {
     lv_event_code_t code = lv_event_get_code(e);
     switch (code) {
@@ -33,10 +34,8 @@ static void screen_1_event_handler (lv_event_t *e)
 
 void events_init_screen_1 (lv_ui *ui)
 {
-    lv_obj_add_event_cb(ui->screen_1, screen_1_event_handler, LV_EVENT_ALL, ui);
+    lv_obj_add_event_cb(ui->screen_1_btn_2, screen_1_btn_2_event_handler, LV_EVENT_ALL, ui);
 }
-
-
 
 static void screen_btn_2_event_handler (lv_event_t *e)
 {
@@ -52,13 +51,9 @@ static void screen_btn_2_event_handler (lv_event_t *e)
     }
 }
 
-
-
-
 void events_init_screen (lv_ui *ui)
 {
     lv_obj_add_event_cb(ui->screen_btn_2, screen_btn_2_event_handler, LV_EVENT_ALL, ui);
-
 }
 
 

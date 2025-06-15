@@ -16,6 +16,8 @@
 #include "bsp/board_api.h"
 #include "tusb.h"
 
+#include "ff.h"
+
 #include "AT24C02.h"
 
 typedef struct{TaskFunction_t pxTaskCode;

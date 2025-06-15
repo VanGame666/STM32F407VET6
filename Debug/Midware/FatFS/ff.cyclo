@@ -1,5 +1,4 @@
 ../Midware/FatFS/ff.c:629:14:ld_dword	1
-../Midware/FatFS/ff.c:664:13:st_dword	1
 ../Midware/FatFS/ff.c:1160:14:clst2sect	2
 ../Midware/FatFS/ff.c:3160:12:get_ldnumber	6
 ../Midware/FatFS/ff.c:3628:16:validate	6
@@ -9,7 +8,6 @@
 ../Midware/FatFS/ff.c:3307:13:check_fs	15
 ../Midware/FatFS/ff.c:1255:16:put_fat	12
 ../Midware/FatFS/ff.c:1676:16:dir_clear	4
-../Midware/FatFS/ff.c:1111:16:sync_fs	4
 ../Midware/FatFS/ff.c:3401:16:mount_volume	41
 ../Midware/FatFS/ff.c:2639:13:get_fileinfo.part.0.constprop.isra	4
 ../Midware/FatFS/ff.c:1866:14:ld_clust.isra	2
@@ -21,6 +19,7 @@
 ../Midware/FatFS/ff.c:3073:16:follow_path	35
 ../Midware/FatFS/ff.c:2327:16:dir_read.constprop	10
 ../Midware/FatFS/ff.c:2487:16:dir_register	7
+../Midware/FatFS/ff.c:1111:16:sync_fs	4
 ../Midware/FatFS/ff.c:3672:9:f_mount	5
 ../Midware/FatFS/ff.c:3732:9:f_open	29
 ../Midware/FatFS/ff.c:3929:9:f_read	20
