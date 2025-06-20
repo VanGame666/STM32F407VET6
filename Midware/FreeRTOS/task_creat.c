@@ -74,7 +74,7 @@ void AppTask2(void* parameter)
 extern uint8_t key_flag;
 void AppTask3(void* parameter)
 {
-	char tx_buff[] = "rsgh";
+	char tx_buff[] = "kkds";
 	char rx_buff[20] = {0};
 	Soft_I2C1_Init();
 
@@ -83,9 +83,8 @@ void AppTask3(void* parameter)
     	if(key_flag == 1)
     	{
     		vTaskSuspendAll();
-    		Soft_I2C1_Mem_Write(AT24CXX_ADDR,0,tx_buff,8);
-    		HAL_Delay(100);
-    		Soft_I2C1_Mem_Read(AT24CXX_ADDR,0,rx_buff,8);
+//    		Soft_I2C1_Mem_Write(AT24CXX_ADDR,8,tx_buff,8);
+    		Soft_I2C1_Mem_Read(AT24CXX_ADDR,8,rx_buff,8);
     		xTaskResumeAll();
     		printf("%s\r\n",rx_buff);
     		key_flag = 0;
