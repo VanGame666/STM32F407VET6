@@ -268,7 +268,7 @@ __weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
   {
     return HAL_ERROR;
   }
-  SysTick->CTRL  &=   ~SysTick_CTRL_ENABLE_Msk;
+
   /* Return function status */
   return HAL_OK;
 }

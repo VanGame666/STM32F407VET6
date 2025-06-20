@@ -116,7 +116,7 @@ int main(void)
   MX_USART6_UART_Init();
   MX_SPI2_Init();
   MX_TIM2_Init();
-  MX_USB_OTG_FS_PCD_Init();
+//  MX_USB_OTG_FS_PCD_Init();
   /* USER CODE BEGIN 2 */
   /* USER CODE END 2 */
 

@@ -1,4 +1,4 @@
-../Protocol/One_Wire.c:4:6:Delay_us	0	static
+../Protocol/One_Wire.c:4:6:Delay	0	static
 ../Protocol/One_Wire.c:10:6:OneWire_Init	32	static
 ../Protocol/One_Wire.c:23:9:OneWire_Reset	8	static
 ../Protocol/One_Wire.c:39:6:OneWire_WriteBit	8	static

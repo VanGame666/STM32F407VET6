@@ -3,7 +3,7 @@ Midware/LVGL/src/extra/others/snapshot/lv_snapshot.o: \
  ../Midware/LVGL/src/extra/others/snapshot/lv_snapshot.h \
  ../Midware/LVGL/src/extra/others/snapshot/../../../lv_conf_internal.h \
  ../Midware/LVGL/src/extra/others/snapshot/../../../lv_conf_kconfig.h \
- E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
+ E:/My_Learn/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/extra/others/snapshot/../../../core/lv_obj.h \
  ../Midware/LVGL/src/extra/others/snapshot/../../../core/../lv_conf_internal.h \
  ../Midware/LVGL/src/extra/others/snapshot/../../../core/../misc/lv_style.h \
@@ -87,7 +87,7 @@ Midware/LVGL/src/extra/others/snapshot/lv_snapshot.o: \
 ../Midware/LVGL/src/extra/others/snapshot/lv_snapshot.h:
 ../Midware/LVGL/src/extra/others/snapshot/../../../lv_conf_internal.h:
 ../Midware/LVGL/src/extra/others/snapshot/../../../lv_conf_kconfig.h:
-E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
+E:/My_Learn/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/extra/others/snapshot/../../../core/lv_obj.h:
 ../Midware/LVGL/src/extra/others/snapshot/../../../core/../lv_conf_internal.h:
 ../Midware/LVGL/src/extra/others/snapshot/../../../core/../misc/lv_style.h:

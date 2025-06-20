@@ -71,28 +71,30 @@ void AppTask2(void* parameter)
 }
 
 /**************************************************  **************************************************/
-extern uint32_t system_ticks;
 extern uint8_t key_flag;
-
 void AppTask3(void* parameter)
 {
-	char tx_buff[] = "at24c02 test";
+	char tx_buff[] = "rsgh";
 	char rx_buff[20] = {0};
 	Soft_I2C1_Init();
-	Soft_I2C1_Mem_Write(AT24CXX_ADDR,0,tx_buff,sizeof(tx_buff));
+
     for(;;vTaskDelay(10))
     {
     	if(key_flag == 1)
     	{
-    		Soft_I2C1_Mem_Read(AT24CXX_ADDR,0,rx_buff,sizeof(tx_buff));
+    		vTaskSuspendAll();
+    		Soft_I2C1_Mem_Write(AT24CXX_ADDR,0,tx_buff,8);
+    		HAL_Delay(100);
+    		Soft_I2C1_Mem_Read(AT24CXX_ADDR,0,rx_buff,8);
+    		xTaskResumeAll();
     		printf("%s\r\n",rx_buff);
     		key_flag = 0;
     	}
-    	if(system_ticks >= 500){system_ticks = 0;HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_2);}
     }
 }
 
 /**************************************************  **************************************************/
+extern uint32_t system_ticks;
 void AppTask4(void* parameter)
 {
 	FATFS fs;  // 文件系统对象
@@ -101,6 +103,8 @@ void AppTask4(void* parameter)
 
     for(;;vTaskDelay(10))
     {
+    	if(system_ticks >= 500){system_ticks = 0;HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_2);}
+
 //    	f_open(&fil, "0:/test.txt", FA_WRITE | FA_CREATE_ALWAYS);
 //    	f_write(&fil, "Hello STM32!", 12, &bw);
 //    	f_close(&fil);

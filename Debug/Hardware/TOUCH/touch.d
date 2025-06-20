@@ -35,7 +35,7 @@ Hardware/TOUCH/touch.o: ../Hardware/TOUCH/touch.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
  ../Hardware/TOUCH/ctiic.h ../Core/Inc/usart.h ../Core/Inc/main.h \
- E:/My_Work/STM32F407VET6/Hardware/DISP/disp.h
+ E:/My_Learn/STM32F407VET6/Hardware/DISP/disp.h
 ../Hardware/TOUCH/touch.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -75,4 +75,4 @@ Hardware/TOUCH/touch.o: ../Hardware/TOUCH/touch.c \
 ../Hardware/TOUCH/ctiic.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/main.h:
-E:/My_Work/STM32F407VET6/Hardware/DISP/disp.h:
+E:/My_Learn/STM32F407VET6/Hardware/DISP/disp.h:

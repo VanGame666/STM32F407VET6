@@ -1,4 +1,4 @@
-../Protocol/One_Wire.c:4:6:Delay_us	1
+../Protocol/One_Wire.c:4:6:Delay	1
 ../Protocol/One_Wire.c:10:6:OneWire_Init	1
 ../Protocol/One_Wire.c:23:9:OneWire_Reset	1
 ../Protocol/One_Wire.c:39:6:OneWire_WriteBit	1
