@@ -84,7 +84,7 @@ void AppTask3(void* parameter)
     	{
     		vTaskSuspendAll();
 //    		Soft_I2C1_Mem_Write(AT24CXX_ADDR,8,tx_buff,8);
-    		Soft_I2C1_Mem_Read(AT24CXX_ADDR,8,rx_buff,8);
+    		Soft_I2C1_Mem_Read(AT24CXX_ADDR,0,rx_buff,8);
     		xTaskResumeAll();
     		printf("%s\r\n",rx_buff);
     		key_flag = 0;
