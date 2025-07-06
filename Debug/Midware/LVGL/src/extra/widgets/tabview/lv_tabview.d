@@ -6,7 +6,7 @@ Midware/LVGL/src/extra/widgets/tabview/lv_tabview.o: \
  ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/lv_log.h \
  ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/../lv_conf_internal.h \
  ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/../lv_conf_kconfig.h \
- E:/My_Learn/STM32F407VET6/Midware/LVGL/lv_conf.h \
+ E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/lv_types.h \
  ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/lv_timer.h \
  ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/../hal/lv_hal_tick.h \
@@ -250,7 +250,7 @@ Midware/LVGL/src/extra/widgets/tabview/lv_tabview.o: \
 ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/lv_log.h:
 ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/../lv_conf_internal.h:
 ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/../lv_conf_kconfig.h:
-E:/My_Learn/STM32F407VET6/Midware/LVGL/lv_conf.h:
+E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/lv_types.h:
 ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/lv_timer.h:
 ../Midware/LVGL/src/extra/widgets/tabview/../../../../src/misc/../hal/lv_hal_tick.h:

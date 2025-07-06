@@ -30,6 +30,14 @@ RM := rm -rf
 -include Midware/TinyUSB/hw/bsp/stm32f4/subdir.mk
 -include Midware/TinyUSB/hw/bsp/subdir.mk
 -include Midware/TinyUSB/subdir.mk
+-include Midware/LwIP/src/netif/ppp/subdir.mk
+-include Midware/LwIP/src/netif/subdir.mk
+-include Midware/LwIP/src/core/ipv6/subdir.mk
+-include Midware/LwIP/src/core/ipv4/subdir.mk
+-include Midware/LwIP/src/core/subdir.mk
+-include Midware/LwIP/src/apps/mqtt/subdir.mk
+-include Midware/LwIP/src/api/subdir.mk
+-include Midware/LwIP/subdir.mk
 -include Midware/LVGL/src/widgets/subdir.mk
 -include Midware/LVGL/src/misc/subdir.mk
 -include Midware/LVGL/src/hal/subdir.mk
@@ -96,12 +104,14 @@ RM := rm -rf
 -include Midware/FreeRTOS/portable/subdir.mk
 -include Midware/FreeRTOS/subdir.mk
 -include Midware/FatFS/subdir.mk
--include Hardware/TOUCH/subdir.mk
--include Hardware/DISP/subdir.mk
+-include Hardware/NT35310/subdir.mk
+-include Hardware/LAN8742/subdir.mk
+-include Hardware/GT1151Q/subdir.mk
 -include Hardware/AT24C02/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include Core/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -156,8 +166,8 @@ all: main-build
 main-build: STM32VET6_DEMO.elf secondary-outputs
 
 # Tool invocations
-STM32VET6_DEMO.elf STM32VET6_DEMO.map: $(OBJS) $(USER_OBJS) E:\My_Learn\STM32F407VET6\STM32F407VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STM32VET6_DEMO.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\My_Learn\STM32F407VET6\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32VET6_DEMO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32VET6_DEMO.elf STM32VET6_DEMO.map: $(OBJS) $(USER_OBJS) E:\My_Work\STM32F407VET6\STM32F407VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STM32VET6_DEMO.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\My_Work\STM32F407VET6\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32VET6_DEMO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

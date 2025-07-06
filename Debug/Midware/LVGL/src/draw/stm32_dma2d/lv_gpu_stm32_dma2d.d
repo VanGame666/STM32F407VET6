@@ -4,7 +4,7 @@ Midware/LVGL/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.o: \
  ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/lv_color.h \
  ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/../lv_conf_internal.h \
  ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/../lv_conf_kconfig.h \
- E:/My_Learn/STM32F407VET6/Midware/LVGL/lv_conf.h \
+ E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/lv_assert.h \
  ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/lv_log.h \
  ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/lv_types.h \
@@ -99,7 +99,7 @@ Midware/LVGL/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.o: \
 ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/lv_color.h:
 ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/../lv_conf_internal.h:
 ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/../lv_conf_kconfig.h:
-E:/My_Learn/STM32F407VET6/Midware/LVGL/lv_conf.h:
+E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/lv_assert.h:
 ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/lv_log.h:
 ../Midware/LVGL/src/draw/stm32_dma2d/../../misc/lv_types.h:

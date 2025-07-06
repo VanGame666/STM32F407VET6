@@ -1,9 +1,10 @@
+
 #if 1
 
 #include "lv_port_indev.h"
 #include "lvgl.h"
-#include "touch.h"
-#include "disp.h"
+#include "../../../Hardware/GT1151Q/touch.h"
+#include "../../../Hardware/NT35310/disp.h"
 
 
 static void touchpad_init(void);

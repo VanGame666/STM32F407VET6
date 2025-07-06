@@ -1,2 +1,2 @@
-../Midware/LVGL/port/lv_port_indev.c:43:13:touchpad_read	2
-../Midware/LVGL/port/lv_port_indev.c:18:6:lv_port_indev_init	1
+../Midware/LVGL/port/lv_port_indev.c:44:13:touchpad_read	2
+../Midware/LVGL/port/lv_port_indev.c:19:6:lv_port_indev_init	1

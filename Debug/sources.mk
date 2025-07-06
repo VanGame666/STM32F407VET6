@@ -26,10 +26,12 @@ OBJCOPY_BIN :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Core \
 Drivers/STM32F4xx_HAL_Driver/Src \
 Hardware/AT24C02 \
-Hardware/DISP \
-Hardware/TOUCH \
+Hardware/GT1151Q \
+Hardware/LAN8742 \
+Hardware/NT35310 \
 Midware/FatFS \
 Midware/FreeRTOS \
 Midware/FreeRTOS/portable \
@@ -96,6 +98,14 @@ Midware/LVGL/src/font \
 Midware/LVGL/src/hal \
 Midware/LVGL/src/misc \
 Midware/LVGL/src/widgets \
+Midware/LwIP \
+Midware/LwIP/src/api \
+Midware/LwIP/src/apps/mqtt \
+Midware/LwIP/src/core \
+Midware/LwIP/src/core/ipv4 \
+Midware/LwIP/src/core/ipv6 \
+Midware/LwIP/src/netif \
+Midware/LwIP/src/netif/ppp \
 Midware/TinyUSB/hw/bsp \
 Midware/TinyUSB/hw/bsp/stm32f4 \
 Midware/TinyUSB/src/class/audio \

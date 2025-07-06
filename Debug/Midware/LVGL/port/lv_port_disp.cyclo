@@ -1,4 +1,4 @@
-../Midware/LVGL/port/lv_port_disp.c:14:13:disp_flush	1
-../Midware/LVGL/port/lv_port_disp.c:10:6:disp_enable_update	1
-../Midware/LVGL/port/lv_port_disp.c:11:6:disp_disable_update	1
-../Midware/LVGL/port/lv_port_disp.c:20:6:lv_port_disp_init	1
+../Midware/LVGL/port/lv_port_disp.c:15:13:disp_flush	1
+../Midware/LVGL/port/lv_port_disp.c:11:6:disp_enable_update	1
+../Midware/LVGL/port/lv_port_disp.c:12:6:disp_disable_update	1
+../Midware/LVGL/port/lv_port_disp.c:21:6:lv_port_disp_init	1

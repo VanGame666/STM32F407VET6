@@ -1,6 +1,7 @@
 #include "lv_port_disp.h"
 #include <stdbool.h>
-#include "disp.h"
+
+#include "../../../Hardware/NT35310/disp.h"
 
 
 #define MY_DISP_HOR_RES    320

@@ -4,7 +4,7 @@ Midware/LVGL/src/extra/widgets/keyboard/lv_keyboard.o: \
  ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/lv_btnmatrix.h \
  ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/../lv_conf_internal.h \
  ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/../lv_conf_kconfig.h \
- E:/My_Learn/STM32F407VET6/Midware/LVGL/lv_conf.h \
+ E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h \
  ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/../core/lv_obj.h \
  ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/../core/../lv_conf_internal.h \
  ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/../core/../misc/lv_style.h \
@@ -96,7 +96,7 @@ Midware/LVGL/src/extra/widgets/keyboard/lv_keyboard.o: \
 ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/lv_btnmatrix.h:
 ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/../lv_conf_internal.h:
 ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/../lv_conf_kconfig.h:
-E:/My_Learn/STM32F407VET6/Midware/LVGL/lv_conf.h:
+E:/My_Work/STM32F407VET6/Midware/LVGL/lv_conf.h:
 ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/../core/lv_obj.h:
 ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/../core/../lv_conf_internal.h:
 ../Midware/LVGL/src/extra/widgets/keyboard/../../../widgets/../core/../misc/lv_style.h:
